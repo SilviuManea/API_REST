@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "name": "Silviu Manea",
+      "email": "silviumanea@example.com",
+      "id": 1,
+      "houses": [
+        {
+          "city": "Zaragoza",
+          "street": "My street",
+          "country": "ES",
+          "id": 1718318356909
+        }
+      ]
+    }
+  ]
+}
