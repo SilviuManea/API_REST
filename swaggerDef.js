@@ -1,3 +1,8 @@
+const config = require('./config'); // Import the configuration
+
+const PORT = config.port;
+
+
 const swaggerDefinition = {
     openapi: '3.0.0',
     info: {
@@ -7,7 +12,7 @@ const swaggerDefinition = {
     },
     servers: [
         {
-            url: 'http://localhost:3000',
+            url: `http://localhost:${PORT}`,
             description: 'Silviu Development server'
         }
     ],

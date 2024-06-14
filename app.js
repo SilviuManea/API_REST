@@ -4,11 +4,12 @@ const axios = require('axios');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocs = require('./swaggerDef'); // Import the Swagger configuration
-
+const config = require('./config'); // Import the configuration
 // Server config
 const app = express();
-const PORT = 3000;
-const JSON_SERVER_URL = 'http://localhost:5000';
+const PORT = config.port;
+const JSON_SERVER_PORT = config.json_server_port;
+const JSON_SERVER_URL = `http://localhost:${JSON_SERVER_PORT}`;
 
 app.use(bodyParser.json());
 
