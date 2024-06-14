@@ -52,7 +52,33 @@ Follow these steps to set up and run the project on your local machine.
    npm run start
    ```
 
-4. **Access the API documentation:**
+4. **Troubleshoot:**
+
+   If you get an error (EADDRINUSE) when trying to run the server indicating the default ports (3000 and/or 5000) are already in use, then modify them on the *config.js* file to any other value.
+   
+   Example:
+   
+    ```bash
+   const config = {
+    port: process.env.PORT || 2999,
+    json_server_port : process.env.JSON_SERVER_PORT || 4999};
+
+   ```
+   
+   Then save the file and run the npm run server command again.
+   ```bash
+   npm run start
+   ```
+   
+   If everything goes well you should see this:
+     ```bash
+   JSON Server is running on port 4999
+   Express server is running on port 2999
+   SwaggerUI can be accesed at http://localhost:2999/api-docs
+   ```
+   The api is now operational.
+
+5. **Access the API documentation:**
    Open your browser and navigate to `http://localhost:3000/api-docs` to view and interact with the API using Swagger UI.
 
 ## API Endpoints
