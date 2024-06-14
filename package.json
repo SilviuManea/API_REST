@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js & node server.js"
+    "start": "concurrently \"node app.js\" \"node server.js\""
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -12,5 +12,8 @@
     "json-server": "^0.16.3",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
