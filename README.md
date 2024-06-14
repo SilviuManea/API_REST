@@ -128,6 +128,7 @@ Follow these steps to set up and run the project on your local machine.
 ```
 .
 ├── app.js
+├── config.js
 ├── db.json
 ├── package.json
 ├── README.md
@@ -136,6 +137,7 @@ Follow these steps to set up and run the project on your local machine.
 ```
 
 - `app.js`: Main application file, contains server setup and routes.
+- `config.js`: Common configuration file for ports or app-wide used variables.
 - `db.json`: In-memory database file used by JSON Server.
 - `package.json`: Project dependencies and scripts.
 - `README.md`: Project documentation.
